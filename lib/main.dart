@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import "package:first_lab/block.dart";
 
 void main() {
   runApp(const Shawn());
@@ -72,73 +73,26 @@ class Shawn extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      padding: EdgeInsets.all(16),
-                      decoration: BoxDecoration(color: Colors.purpleAccent),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Image.asset(
-                            'assets/images/sanjay.png',
-                            width: 50,
-                          ),
-                          const SizedBox(height: 10),
-                          const Text("80%"),
-                          const SizedBox(height: 10),
-                          Text("W Sanjay"),
-                        ],
-                      ),
+                    Block(
+                      "some title",
+                      "assets/images/Sanjay.png",
+                      colour: Colors.green,
+                      number: 19,
                     ),
-                    Container(
-                      padding: EdgeInsets.all(16),
-                      decoration: BoxDecoration(color: Colors.purpleAccent),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Image.asset(
-                            'assets/images/sanjay.png',
-                            width: 50,
-                          ),
-                          const SizedBox(height: 10),
-                          const Text("80%"),
-                          const SizedBox(height: 10),
-                          Text("W Sanjay"),
-                        ],
-                      ),
+                    Block(
+                      "some dummy text",
+                      "assets/images/shawn.jpg",
+                      colour: Colors.green,
                     ),
-                    Container(
-                      padding: EdgeInsets.all(16),
-                      decoration: BoxDecoration(color: Colors.purpleAccent),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Image.asset(
-                            'assets/images/sanjay.png',
-                            width: 50,
-                          ),
-                          const SizedBox(height: 10),
-                          const Text("80%"),
-                          const SizedBox(height: 10),
-                          Text("W Sanjay"),
-                        ],
-                      ),
+                    Block(
+                      "bla bla bla",
+                      "assets/images/shawn.jpg",
+                      colour: Colors.blue,
                     ),
-                    Container(
-                      padding: EdgeInsets.all(16),
-                      decoration: BoxDecoration(color: Colors.purpleAccent),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Image.asset(
-                            'assets/images/sanjay.png',
-                            width: 50,
-                          ),
-                          const SizedBox(height: 10),
-                          const Text("80%"),
-                          const SizedBox(height: 10),
-                          Text("W Sanjay"),
-                        ],
-                      ),
+                    Block(
+                      "bla bla bla",
+                      "assets/images/shawn.jpg",
+                      colour: Colors.purpleAccent,
                     ),
                   ],
                 ),
